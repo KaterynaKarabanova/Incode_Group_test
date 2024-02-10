@@ -14,13 +14,17 @@ const socket = io("http://localhost:4000");
 
 const TickerList = () => {
   const [tickerData, setTickerData] = useState([]);
-  const [prevData, setPrevData] = useState([]);
-
+  const [prevData, setPrevData] = useState();
   const [isLoading, setIsLoading] = useState(true);
-
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("data"));
+    if (data) {
+      setPrevData(data);
+    }
+  }, []);
   useEffect(() => {
     socket.on("ticker", (quotes) => {
-      setPrevData([...tickerData]);
+      localStorage.setItem("data", JSON.stringify(quotes));
       setTickerData(quotes);
       setIsLoading(false); // Set loading to false when data is received
     });
