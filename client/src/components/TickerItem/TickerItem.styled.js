@@ -6,14 +6,6 @@ export const StyledTicker = styled.p`
   color: chocolate;
 `;
 
-export const StyledList = styled.ul`
-  list-style: none;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
-
 export const StyledItem = styled.li`
   font-size: 20px;
   font-weight: 600;
@@ -38,10 +30,4 @@ export const StyledWrapper = styled.div`
 
 export const StyledTimeWrapper = styled(StyledWrapper)`
   width: 330px;
-`;
-
-export const StyledListWrapper = styled(StyledWrapper)`
-  display: block;
-  width: 1200px;
-  margin: 0 auto;
 `;

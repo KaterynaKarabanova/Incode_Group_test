@@ -1,5 +1,5 @@
-import TickerList from "./TickerList/TickerList";
-import { StyledListWrapper } from "./TickerList/TickerList.styled";
+import TickerList from "./components/TickerList/TickerList";
+import { StyledListWrapper } from "./components/TickerList/TickerList.styled";
 
 function App() {
   return (
