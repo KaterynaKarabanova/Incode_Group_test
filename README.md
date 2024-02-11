@@ -2,7 +2,8 @@
 
 Test Task for Incode Group.
 
-Here you can follow changes in the value of shares on the stock exchange in online format
+Here you can follow changes in the value of shares on the stock exchange in online format.
+
 Techonologies used: React, Redux, socket.io, styled-components. 
 
 ![image](https://github.com/KaterynaKarabanova/Incode_Group_test/assets/135024704/cad2e11a-84ef-4eb1-bfcd-99ede17703ab)
